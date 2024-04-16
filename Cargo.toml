@@ -24,10 +24,10 @@ unstable = []
 musl-reference-tests = ['rand']
 
 [workspace]
-members = [
-  "crates/compiler-builtins-smoke-test",
-  "crates/libm-bench",
-]
+members = ["crates/compiler-builtins-smoke-test", "crates/libm-bench"]
+
+[dependencies]
+cfg-if = "1.0.0"
 
 [dev-dependencies]
 no-panic = "0.1.8"
